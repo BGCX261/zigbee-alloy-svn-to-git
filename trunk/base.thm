@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<projection> <type name="z/types/Time"/> </projection>
+
+<defaultnode hideunconnected="yes"/>
+
+<defaultedge visible="no" attribute="yes" constraint="no"/>
+
+<node>
+   <type name="Int"/>
+   <type name="univ"/>
+   <type name="mac_orphan_indication/MacOrphanIndication"/>
+   <type name="nwk_orphan_indication/NwkOrphanIndication"/>
+   <type name="scan_orphan/ScanOrphan"/>
+   <type name="seq/Int"/>
+   <type name="z/event/AplEvent"/>
+   <type name="z/event/MacEvent"/>
+   <type name="z/event/MacIndication"/>
+   <type name="z/event/MacRequest"/>
+   <type name="z/event/NwkEvent"/>
+   <type name="z/event/NwkIndication"/>
+   <type name="z/event/NwkRequest"/>
+   <type name="z/event/PhyEvent"/>
+   <type name="z/packet/CoordinatorRealignment"/>
+   <type name="z/packet/OrphanNotification"/>
+   <type name="z/types/Time"/>
+   <type name="z/types/to/Ord"/>
+   <type name="z/types/natural/ord/Ord"/>
+   <set name="$Success_r" type="z/event/NwkRequest"/>
+   <set name="First" type="z/types/to/Ord"/>
+   <set name="Last" type="z/types/to/Ord"/>
+   <set name="Next" type="z/types/to/Ord"/>
+   <set name="t" type="z/event/AtomEvent"/>
+   <set name="t" type="z/event/LongEvent"/>
+   <set name="t&apos;" type="z/event/LongEvent"/>
+</node>
+
+<node hideunconnected="no" label="Neighbor">
+   <type name="z/neighbor/Neighbor"/>
+</node>
+
+<node hideunconnected="no" label="Node">
+   <type name="z/node/Node"/>
+</node>
+
+<node hideunconnected="no" label="Packet">
+   <type name="z/packet/Packet"/>
+</node>
+
+<node label="">
+   <type name="z/types/natural/Natural"/>
+</node>
+
+<node label="ALREADY_PRESENT">
+   <type name="z/types/NWK_ALREADY_PRESENT"/>
+</node>
+
+<node label="Addr">
+   <type name="z/types/Addr"/>
+</node>
+
+<node label="AtomEvent">
+   <type name="z/event/AtomEvent"/>
+</node>
+
+<node label="Bool">
+   <type name="z/types/bool/Bool"/>
+</node>
+
+<node label="CHILD">
+   <type name="z/types/RELATION_CHILD"/>
+</node>
+
+<node label="COORDINATOR">
+   <type name="z/types/DEVICE_COORDINATOR"/>
+</node>
+
+<node label="DeviceType">
+   <type name="z/types/DeviceType"/>
+</node>
+
+<node label="EA">
+   <type name="z/types/ExtAddr"/>
+</node>
+
+<node label="EA_0x00">
+   <type name="z/types/EXTADDR_0x00"/>
+</node>
+
+<node label="EA_0x01">
+   <type name="z/types/EXTADDR_0x01"/>
+</node>
+
+<node label="EA_0x02">
+   <type name="z/types/EXTADDR_0x02"/>
+</node>
+
+<node label="EA_0x03">
+   <type name="z/types/EXTADDR_0x03"/>
+</node>
+
+<node label="EA_0xFF">
+   <type name="z/types/EXTADDR_0xFF"/>
+</node>
+
+<node label="ENDDEVICE">
+   <type name="z/types/DEVICE_ENDDEVICE"/>
+</node>
+
+<node label="False">
+   <type name="z/types/bool/False"/>
+</node>
+
+<node label="JoinOrphan">
+   <type name="join_orphan/JoinOrphan"/>
+</node>
+
+<node label="LongEvent">
+   <type name="z/event/LongEvent"/>
+</node>
+
+<node label="MacStatus">
+   <type name="z/types/MacStatus"/>
+</node>
+
+<node label="NEIGHBOR_TABLE_FULL">
+   <type name="z/types/NWK_NEIGHBOR_TABLE_FULL"/>
+</node>
+
+<node label="NONE">
+   <type name="z/types/RELATION_NONE"/>
+</node>
+
+<node label="NOT_PERMITTED">
+   <type name="z/types/NWK_NOT_PERMITTED"/>
+</node>
+
+<node label="NO_BEACON">
+   <type name="z/types/MAC_NO_BEACON"/>
+</node>
+
+<node label="NO_DATA">
+   <type name="z/types/MAC_NO_DATA"/>
+</node>
+
+<node label="NO_NETWORKS">
+   <type name="z/types/NWK_NO_NETWORKS"/>
+</node>
+
+<node label="NeighborAttribute">
+   <type name="z/neighbor/NeighborAttribute"/>
+</node>
+
+<node label="NeighborUpdate">
+   <type name="z/update/NeighborUpdate"/>
+</node>
+
+<node label="NodeEvent">
+   <type name="z/event/NodeEvent"/>
+</node>
+
+<node label="NwkAttribute">
+   <type name="z/node/NwkAttribute"/>
+</node>
+
+<node label="NwkStatus">
+   <type name="z/types/NwkStatus"/>
+</node>
+
+<node label="NwkUpdate">
+   <type name="z/update/NwkUpdate"/>
+</node>
+
+<node label="One">
+   <set name="z/types/natural/One" type="z/types/natural/Natural"/>
+</node>
+
+<node label="PAN_ACCESS_DENIED">
+   <type name="z/types/MAC_PAN_ACCESS_DENIED"/>
+</node>
+
+<node label="PAN_AT_CAPACITY">
+   <type name="z/types/MAC_PAN_AT_CAPACITY"/>
+</node>
+
+<node label="PARENT">
+   <type name="z/types/RELATION_PARENT"/>
+</node>
+
+<node label="PREVCHILD">
+   <type name="z/types/RELATION_PREVCHILD"/>
+</node>
+
+<node label="ROUTER">
+   <type name="z/types/DEVICE_ROUTER"/>
+</node>
+
+<node label="Relation">
+   <type name="z/types/Relation"/>
+</node>
+
+<node label="SA">
+   <type name="z/types/ShortAddr"/>
+</node>
+
+<node label="SA_0x00">
+   <type name="z/types/SHORTADDR_0x00"/>
+</node>
+
+<node label="SA_0x01">
+   <type name="z/types/SHORTADDR_0x01"/>
+</node>
+
+<node label="SA_0x02">
+   <type name="z/types/SHORTADDR_0x02"/>
+</node>
+
+<node label="SA_0x03">
+   <type name="z/types/SHORTADDR_0x03"/>
+</node>
+
+<node label="SA_0xFF">
+   <type name="z/types/SHORTADDR_0xFF"/>
+</node>
+
+<node label="SIBLING">
+   <type name="z/types/RELATION_SIBLING"/>
+</node>
+
+<node label="SUCCESS">
+   <type name="z/types/SUCCESS"/>
+</node>
+
+<node label="Status">
+   <type name="z/types/Status"/>
+</node>
+
+<node label="True">
+   <type name="z/types/bool/True"/>
+</node>
+
+<node label="UNAUTHCHILD">
+   <type name="z/types/RELATION_UNAUTHCHILD"/>
+</node>
+
+<node label="UNKNOWN_DEVICE">
+   <type name="z/types/NWK_UNKNOWN_DEVICE"/>
+</node>
+
+<node label="Zero">
+   <set name="z/types/natural/Zero" type="z/types/natural/Natural"/>
+</node>
+
+<node label="depth">
+   <type name="z/neighbor/depth"/>
+   <type name="z/node/depth"/>
+</node>
+
+<node label="deviceType">
+   <type name="z/neighbor/deviceType"/>
+</node>
+
+<node label="endDeviceCapacity">
+   <type name="z/neighbor/endDeviceCapacity"/>
+   <type name="z/node/endDeviceCapacity"/>
+</node>
+
+<node label="networkAddress">
+   <type name="z/neighbor/networkAddress"/>
+</node>
+
+<node label="nwkDeviceType">
+   <type name="z/node/nwkDeviceType"/>
+</node>
+
+<node label="nwkNeighborTable">
+   <type name="z/node/nwkNeighborTable"/>
+</node>
+
+<node label="nwkNetworkAddress">
+   <type name="z/node/nwkNetworkAddress"/>
+</node>
+
+<node label="permitJoining">
+   <type name="z/neighbor/permitJoining"/>
+   <type name="z/node/permitJoining"/>
+</node>
+
+<node label="potentialParent">
+   <type name="z/neighbor/potentialParent"/>
+</node>
+
+<node label="relationship">
+   <type name="z/neighbor/relationship"/>
+</node>
+
+<node label="routerCapacity">
+   <type name="z/neighbor/routerCapacity"/>
+   <type name="z/node/routerCapacity"/>
+</node>
+
+<node visible="yes" hideunconnected="no" label="Event">
+   <type name="z/event/Event"/>
+</node>
+
+<edge attribute="no">
+   <relation name="aMaxFrameRetries"> <type name="z/node/Node"/> <type name="Int"/> </relation>
+   <relation name="aMaxLostBeacons"> <type name="z/node/Node"/> <type name="Int"/> </relation>
+   <relation name="aResponseWaitTime"> <type name="z/node/Node"/> <type name="Int"/> </relation>
+   <relation name="nwkcMaxNeighborTableSize"> <type name="z/node/Node"/> <type name="Int"/> </relation>
+</edge>
+
+<edge visible="yes" attribute="no">
+   <relation name="hear"> <type name="z/node/Node"/> <type name="z/node/Node"/> </relation>
+   <relation name="node"> <type name="z/event/NodeEvent"/> <type name="z/node/Node"/> </relation>
+   <relation name="notification"> <type name="z/event/MacIndication"/> <type name="z/packet/OrphanNotification"/> </relation>
+   <relation name="notification"> <type name="z/event/MacRequest"/> <type name="z/packet/OrphanNotification"/> </relation>
+   <relation name="nwkNeighborTable"> <type name="z/node/Node"/> <type name="z/neighbor/Neighbor"/> </relation>
+   <relation name="realignment"> <type name="z/event/MacIndication"/> <type name="z/packet/CoordinatorRealignment"/> </relation>
+   <relation name="realignment"> <type name="z/event/MacRequest"/> <type name="z/packet/CoordinatorRealignment"/> </relation>
+   <relation name="source"> <type name="z/event/Event"/> <type name="z/event/LongEvent"/> </relation>
+   <relation name="target"> <type name="z/update/NeighborUpdate"/> <type name="z/neighbor/Neighbor"/> </relation>
+   <relation name="target"> <type name="z/update/NwkUpdate"/> <type name="z/node/Node"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
